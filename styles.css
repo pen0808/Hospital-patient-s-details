@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+HU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --lightgrey:rgba(128, 128, 128, 0.9);
+  --borderBottomColor: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+body{
+  font-family: 'Roboto' sans-serif;
+}
+
+.outer-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 2rem 3rem;
+  background-color: rgb(244, 234, 234);
+}
+
+.sidebar-container{
+  width: 30%;
+  aspect-ratio: 2 / 4;
+  background-color: white;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+}
+
+.patient-name{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 1rem;
+  border-bottom: var(--borderBottomColor);
+  padding: 1rem 0;
+}
+
+.icon i{
+  font-size: 2rem;
+  color: rgb(138, 223, 11)
+}
+
+p{
+  color: var(--lightgrey);
+}
+
+.identity{
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: var(--borderBottomColor);
+}
+
+.identity p{
+  margin-bottom: 0.5rem;
+}
+
+.quick{
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.quick p{
+  margin-bottom: 0.5rem;
+}
+
+.quick-btns{
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.quick-btns button{
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: var(--borderBottomColor);
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.next-appointment{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  row-gap: 0.5rem;
+}
+
+.sidebar-appointment{
+  padding: 0.5rem;
+  border: var(--borderBottomColor);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+}
+
+.patient-container{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}  
+
+.card1{
+  width: 100%;
+  background-color: white;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+}
+
+.appointments-inputs{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.appointment-status{
+  padding: 0.5rem 0;
+}
+
+.appointment-status h1{
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-search{
+  padding: 0.5rem 0;
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.input-search input{
+  padding: 0.5rem;
+  border: var(--borderBottomColor);
+  border-radius: 0.5rem;
+}
+
+.input-search input:focus{
+  outline: 1px solid green;
+}
+
+.input-search select{
+  padding: 0.5rem;
+  border: var(--borderBottomColor);
+  border-radius: 0.5rem;
+}
+
+.input-search select:focus{
+  outline: 1px solid green;
+}
+
+.threedivs-appointStatus{
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.card{
+  padding: 1rem;
+  border: var(--borderBottomColor);
+  border-radius: 1rem;
+}
+
+.card-2{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.card-2 p:last-child{
+  padding: 0.5rem;
+  border: var(--borderBottomColor);
+  border-radius: 1rem;
+  background-color: greenyellow;
+  color: black;
+  font-weight: 600;
+}
+
+.card h3{
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.card p{
+  font-size: 0.9rem;
+}
+
+.para{
+  padding: 0.5rem 0;
+}
+
+.anchors{
+  width: 100%;
+  display: flex;
+  column-gap: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.anchors a{
+  text-decoration: none;
+  color: green;
+  
+}
+
+.two-cards{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0.5rem 0;
+}
+
+.two-cards > p{
+  padding: 0.5rem ;
+  border: var(--borderBottomColor);
+  border-radius: 1rem;
+}
+
+.prescribe{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardTwo{
+  padding: 1rem;
+  border: var(--borderBottomColor);
+  border-radius: 1rem;
+  width: 50%;
+  transition: transform 0.2s;
+}
+
+.cardTwo:hover{
+  transform: scaleX(1.02);
+}
+
+.twodiv-cards{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+}
+
+.med{
+  padding: 0.5rem 0;
+}
+
+.med h1{
+  margin-bottom: 0.5rem;
+}
+
+.threediv-cards{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.med-his{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.threediv-cards summary{
+  list-style-type: none;
+}
+
+.health-details{
+  border: var(--borderBottomColor);
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(128, 128, 128, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.health-details:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 0 4px 2px rgba(103, 101, 101, 0.1);
+}
+
+.health-details summary{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+   
+/* tablets and mobile */
+@media screen and (max-width:1100px){
+  .outer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+    background-color: rgb(244, 234, 234);
+  }
+  .sidebar-container{
+    min-width: 250px;
+    width: 80%;
+    aspect-ratio: 1/0.5;
+    
+  }
+  .patient-container{
+    width: 80%;
+  }
+
+  .appointment-status h1{
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+}
+
+/* mobile */
+@media screen and (max-width: 700px){
+  .outer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.5rem;
+  }
+  .sidebar-container{
+    
+    width: 95%;
+    aspect-ratio: 1/0.5;
+    
+  }
+  .patient-container{
+    width: 95%;
+  }
+
+  .appointments-inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .card{
+    width: 100%;
+  }
+
+  .card-2{
+    display: flex;
+    align-items: center;
+  }
+
+  .card-2 p:last-child{
+    padding: 0.3rem;
+    font-size: 0.75rem;
+  }
+
+  .cardTwo{
+    width: 100%;
+  }
+
+  .med h1{
+    font-size: 1.7rem;
+  }
+
+  summary h3{
+    font-size: 1rem;
+  }
+}
