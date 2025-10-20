@@ -26,7 +26,7 @@ body{
 
 .sidebar-container{
   width: 30%;
-  aspect-ratio: 2 / 4;
+  aspect-ratio: 2 / 6;
   background-color: white;
   padding: 2rem 1rem;
   border-radius: 1rem;
@@ -386,4 +386,5 @@ p{
   summary h3{
     font-size: 1rem;
   }
+
 }
