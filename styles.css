@@ -26,7 +26,7 @@ body{
 
 .sidebar-container{
   width: 30%;
-  aspect-ratio: 1 / 7;
+  aspect-ratio: 1 / 6;
   background-color: white;
   padding: 2rem 1rem;
   border-radius: 1rem;
@@ -388,6 +388,7 @@ p{
   }
 
 }
+
 
 
 
